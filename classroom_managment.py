@@ -71,10 +71,7 @@ def set_email(name, email):
 
 # V
 def add_grade(name, profession, grade):
-    index = index_of_student(name)
-    if index is not None:
-        classroom[index]['grades'].append((profession,grade))
-        #classroom[index_of_student(name)]['grades'].append((profession,grade))
+    classroom[index_of_student(name)]['grades'].append((profession,grade))
     """Adds a new grade to the student grades"""
     pass
 
@@ -105,9 +102,9 @@ def get_professions(name):
 #print(index_of_student('Charlie'))
 #delete_student('Bob')
 #set_email('Charlie','charlie2@example.com')
-add_grade('Bob','physics',100)
+#add_grade('Bob','physics',100)
 #print(avg_grade('Charlie','english'))
 #print(get_professions('Charlie'))
 #add_student('Abc','abc@gmail.com')
 #add_student('Def')
-print(classroom)
+#print(classroom)
